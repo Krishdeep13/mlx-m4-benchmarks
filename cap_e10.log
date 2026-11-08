@@ -1,0 +1,2 @@
+eager 10 ops @2^24: median 5.652 ms
+saved capture_eager_10.gputrace

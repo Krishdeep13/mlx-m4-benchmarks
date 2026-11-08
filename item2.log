@@ -1,0 +1,12 @@
+dtype: mlx.core.float32
+[initial] first 30.446 ms | median 20.652 ms | min 20.616 ms
+[initial] first 15: [30.446, 20.792, 20.668, 20.649, 20.656, 20.667, 20.653, 20.682, 20.675, 22.101, 20.666, 20.63, 20.674, 20.667, 20.708]
+[sleep 0.1s] first-run ms: [33.7, 34.8, 35.1, 35.2, 35.8] | median 35.1
+[sleep 0.1s] second-run ms: [20.9, 20.85, 20.76, 20.76, 20.82]
+[sleep 1s] first-run ms: [35.9, 34.7, 28.9, 33.2, 33.9] | median 33.9
+[sleep 1s] second-run ms: [20.73, 20.81, 20.81, 20.82, 20.81]
+[sleep 5s] first-run ms: [51.1, 47.5, 43.8, 49.2, 44.1] | median 47.5
+[sleep 5s] second-run ms: [21.75, 21.85, 22.18, 21.93, 22.94]
+[sleep 10s] first-run ms: [43.8, 42.0, 50.4, 47.9, 47.3] | median 47.3
+[sleep 10s] second-run ms: [22.33, 22.13, 21.88, 21.9, 21.71]
+wrote single_vs_median_raw.csv

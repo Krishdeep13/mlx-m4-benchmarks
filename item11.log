@@ -1,0 +1,8 @@
+--- A. lazy graph to dot file ---
+wrote graph_eager.dot
+--- B. compile once vs compile every iteration ---
+compile once:   0.225 ms/iter | traces in loop: 0
+compile each:   0.254 ms/iter | traces in loop: 20
+--- C. fixed shape vs new shape every call ---
+fixed shape:    0.211 ms/iter | traces: 0
+varying shape:  0.195 ms/iter | traces: 20

@@ -1,0 +1,10 @@
+float32  elementwise  eager    2.943 | compiled    0.785 | speedup  3.75x | maxdiff 0.0
+float32  where        eager    3.646 | compiled    0.805 | speedup  4.53x | maxdiff 0.0
+float32  layernorm    eager    3.193 | compiled    2.413 | speedup  1.32x | maxdiff 0.0
+float32  softmax      eager    0.799 | compiled    0.770 | speedup  1.04x | maxdiff 0.0
+float32  matmul+gelu  eager   21.151 | compiled   21.158 | speedup  1.00x | maxdiff 0.0
+float16  elementwise  eager    1.490 | compiled    0.632 | speedup  2.36x | maxdiff 0.0
+float16  where        eager    1.975 | compiled    0.424 | speedup  4.66x | maxdiff 0.0
+float16  layernorm    eager    1.649 | compiled    1.295 | speedup  1.27x | maxdiff 0.0
+float16  softmax      eager    0.419 | compiled    0.410 | speedup  1.02x | maxdiff 0.0
+float16  matmul+gelu  eager   18.747 | compiled   18.739 | speedup  1.00x | maxdiff 0.0

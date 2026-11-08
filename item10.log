@@ -1,0 +1,11 @@
+--- A. scalar as mx.array: does it retrace? ---
+body ran 1 times for mx.array k = 2, 3, 4
+--- B. correctness: 5 fns x 3 dtypes x 6 shapes ---
+90 cases, 0 with nonzero diff, max diff 0.0
+--- C. edge values ---
+elem equal incl. NaN: True
+where equal incl. NaN: True
+tanh equal incl. NaN: True
+--- D. gradients ---
+elem grad max diff: 0.0
+tanh grad max diff: 0.0
