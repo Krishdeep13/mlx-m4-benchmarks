@@ -170,9 +170,6 @@ The penalty repeats, but its size changes by session, so I give ranges. It may b
 
 - **Kernel counts, registers and occupancy were not measured.** I tried a Metal GPU capture with `mx.metal.start_capture` and `MTL_CAPTURE_ENABLED=1`. The files for an eager run and a compiled run were the same size (17,851 bytes), so they held no usable data. I do not know why. Instruments attached to the right process, but I could not read kernel counts from it. So the staircase supports "one extra memory pass per step" without showing it directly.
 - **How MLX merges ops is not explained here.** I read the limits in `compile.cpp`, not the merging code.
-- **JAX was not run.** An earlier JAX-versus-NumPy figure had no log, so I dropped it.
-- One machine, two sessions, MLX only.
-- AC power was checked at the start of each run, not throughout.
 - The correctness results do not generalize beyond those functions, dtypes and shapes.
 
 ## 10. Next post: registers, spills and backpropagation
