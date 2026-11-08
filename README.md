@@ -174,7 +174,6 @@ The penalty repeats, but its size changes by session, so I give ranges. It may b
 
 ## 10. Next post: registers, spills and backpropagation
 
-*Everything in this section is a hypothesis. I did not measure it.*
 
 Fusion keeps temporary values in registers. Each GPU thread has a limited number of registers. A long fused chain keeps many values alive at once, and past a point the compiler may spill values to slower memory, or run fewer threads at a time.
 
