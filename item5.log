@@ -1,8 +1,0 @@
-K=  1 | eager    9.099 ms | compiled    4.798 ms | speedup  1.90x | first compiled    181.2 ms | maxdiff 0.0
-K=  2 | eager   17.624 ms | compiled    4.796 ms | speedup  3.67x | first compiled    137.1 ms | maxdiff 0.0
-K=  4 | eager   34.694 ms | compiled    4.795 ms | speedup  7.24x | first compiled    138.8 ms | maxdiff 0.0
-K=  8 | eager   68.820 ms | compiled    9.051 ms | speedup  7.60x | first compiled    273.4 ms | maxdiff 0.0
-K= 16 | eager  137.136 ms | compiled   13.362 ms | speedup 10.26x | first compiled    279.4 ms | maxdiff 0.0
-K= 32 | eager  274.380 ms | compiled   26.199 ms | speedup 10.47x | first compiled    165.7 ms | maxdiff 0.0
-K= 64 | eager  547.360 ms | compiled   51.805 ms | speedup 10.57x | first compiled    189.9 ms | maxdiff 0.0
-K=128 | eager 1095.061 ms | compiled  103.148 ms | speedup 10.62x | first compiled    246.2 ms | maxdiff 0.0

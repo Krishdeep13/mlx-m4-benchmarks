@@ -1,5 +1,0 @@
-dtype: mlx.core.float32 | elements: 134217728 | bytes counted: 1073741824
-first compiled call (trace+compile+run): 225.56 ms
-max abs diff: 0.0
-eager: median 22.302 ms | min 22.250 | p10-p90 [22.260, 22.350] | 48.1 GB/s
-compiled: median 4.795 ms | min 4.785 | p10-p90 [4.789, 4.840] | 223.9 GB/s
