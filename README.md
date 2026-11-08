@@ -91,7 +91,7 @@ If MLX fused on its own, eager time would flatten as the chain grew. It does not
 | 16 | 137.42 ms | 13.36 ms | 10.29x |
 | 128 | 1131.97 ms | 104.10 ms | 10.87x |
 
-The speedup levels off at about 10.6-10.9x for K of 32 and above. This shows no automatic fusion in my measurements. I did not read the source to prove that eager never fuses.
+The speedup levels off at about 10.6-10.9x for K of 32 and above. This shows no automatic fusion in my measurements. 
 
 ### 6.3 The staircase and the 11-op limit
 
