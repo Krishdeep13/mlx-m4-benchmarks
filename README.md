@@ -53,7 +53,7 @@ I ran everything on AC power, with other GPU apps closed and about 20 s of idle 
 
 On a discrete GPU, data crosses a PCIe link between CPU and GPU memory. Apple silicon has no such copy, because the CPU and GPU share one memory pool. Fusion still helps, because **unified memory removes the copy, not the memory traffic**.
 
-- One eager elementwise op on 2^27 float32 elements (512 MiB) cost about 4.3 ms. It reads and writes 1 GiB, which works out to about 250 GB/s. That is close to the 273 GB/s spec figure, so the op is limited by memory, not by math. (The 250 GB/s is my arithmetic, not a hardware measurement.)
+- One eager elementwise op on 2<sup>27</sup> float32 elements (512 MiB) cost about 4.3 ms. It reads and writes 1 GiB, which works out to about 250 GB/s. That is close to the 273 GB/s spec figure, so the op is limited by memory, not by math. (The 250 GB/s is my arithmetic, not a hardware measurement.)
 - A fused chain of up to 11 ops cost about 4.8 ms, roughly one pass over memory.
 - The GPU has far more compute than bandwidth. I measured 6.66 TFLOPS (fp32) and 7.5 TFLOPS (fp16) on large matmuls. An elementwise op does about one operation per 8 bytes moved, so it uses a small part of that. Extra math inside a fused kernel is cheap.
 
