@@ -1,0 +1,28 @@
+--- 1a. python float global changed after first call ---
+compiled before: [2.0, 2.0, 2.0, 2.0]
+eager after:     [3.0, 3.0, 3.0, 3.0]
+compiled after:  [2.0, 2.0, 2.0, 2.0]
+--- 1b. mx.array global changed after first call ---
+compiled before: [2.0, 2.0, 2.0, 2.0]
+eager after:     [3.0, 3.0, 3.0, 3.0]
+compiled after:  [2.0, 2.0, 2.0, 2.0]
+--- 2. side effect in body ---
+python body ran 1 times in 5 compiled calls
+--- 3. RNG inside compiled fn ---
+compiled, no state: identical outputs? True
+eager: identical outputs? False
+compiled, with state: identical outputs? False
+--- 4. value-dependent control flow (.item) ---
+ValueError : [eval] Attempting to eval an array during function transformations like compile or vmap is not allowed.
+--- 5. retrace on shape / dtype change ---
+A 1st                      4.11 ms | python body ran so far: 1
+A 2nd                      1.27 ms | python body ran so far: 1
+A 3rd                      0.76 ms | python body ran so far: 1
+B (new shape) 1st          0.70 ms | python body ran so far: 2
+B 2nd                      0.24 ms | python body ran so far: 2
+A again                    0.70 ms | python body ran so far: 2
+A fp16 (new dtype)         1.87 ms | python body ran so far: 3
+--- 6. shapeless=True ---
+python body ran 1 times for 2 different shapes
+--- 7. python scalar argument changed ---
+python body ran 2 times for k=2, 2, 3

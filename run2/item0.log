@@ -1,0 +1,22 @@
+=== ENVIRONMENT DUMP ===
+Python Version: 3.15.2
+MLX Version: 0.32.4
+MLX Device Info: {'device_name': 'Apple M4 Pro', 'max_recommended_working_set_size': 17179885568, 'memory_size': 25769803776, 'architecture': 'applegpu_g16s', 'max_buffer_length': 12884901888, 'resource_limit': 499000}
+CPU Brand (sysctl): Apple M4 Pro
+macOS Version (sw_vers): ProductName:		macOS
+ProductVersion:		15.5
+BuildVersion:		24F74
+Xcode Select Path: /Applications/Xcode.app/Contents/Developer
+Xcode Version: Xcode 16.4
+Build version 16F6
+
+--- PYTHON PACKAGES ---
+mlx       0.32.4
+mlx-metal 0.32.4
+numpy     2.5.4
+
+--- POWER STATE (Ensure Plugged In) ---
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=21626979)	84%; charging; 0:49 remaining present: true
+Python executable: /opt/homebrew/opt/python@3.15/bin/python3.15
+powermode            0

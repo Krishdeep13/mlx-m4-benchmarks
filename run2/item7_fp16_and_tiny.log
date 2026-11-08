@@ -1,0 +1,23 @@
+--- matmul sweep ---
+float32   n=   64 median    0.1561 ms |   0.00 TFLOPS
+float32   n=  256 median    0.1907 ms |   0.18 TFLOPS
+float32   n= 1024 median    0.4737 ms |   4.53 TFLOPS
+float32   n= 2048 median    2.8075 ms |   6.12 TFLOPS
+float32   n= 4096 median   20.6423 ms |   6.66 TFLOPS
+float32   n= 8192 median  165.3278 ms |   6.65 TFLOPS
+float16   n=   64 median    0.1322 ms |   0.00 TFLOPS
+float16   n=  256 median    0.1454 ms |   0.23 TFLOPS
+float16   n= 1024 median    0.4491 ms |   4.78 TFLOPS
+float16   n= 2048 median    2.5152 ms |   6.83 TFLOPS
+float16   n= 4096 median   18.2896 ms |   7.51 TFLOPS
+float16   n= 8192 median  144.8096 ms |   7.59 TFLOPS
+bfloat16  n=   64 median    0.1251 ms |   0.00 TFLOPS
+bfloat16  n=  256 median    0.1496 ms |   0.22 TFLOPS
+bfloat16  n= 1024 median    0.4425 ms |   4.85 TFLOPS
+bfloat16  n= 2048 median    2.5144 ms |   6.83 TFLOPS
+bfloat16  n= 4096 median   18.3084 ms |   7.51 TFLOPS
+bfloat16  n= 8192 median  144.8586 ms |   7.59 TFLOPS
+--- tiny-op sync cost: 20 elementwise ops on 64x64 ---
+one eval:  median 0.1965 ms | p10-p90 [0.1872, 0.2183]
+eval each: median 2.1092 ms | p10-p90 [1.9916, 2.2698]
+extra cost per eval: 95.6 µs

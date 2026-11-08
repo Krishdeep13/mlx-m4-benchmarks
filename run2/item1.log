@@ -1,0 +1,5 @@
+dtype: mlx.core.float32
+A (no eval, graph build only): median 0.542 µs | min 0.500 | p10-p90 [0.500, 0.683]
+B (one eval):                  median 21.494 ms | min 21.476 | p10-p90 [21.479, 21.519]
+C (eval per op):               median 21.727 ms | min 21.620 | p10-p90 [21.655, 21.761]
+sync cost C-B (median): 0.233 ms
