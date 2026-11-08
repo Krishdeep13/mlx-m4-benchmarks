@@ -40,7 +40,7 @@ I did not run JAX for this post. The JAX statements rest on the linked docs, and
 | GPU | 20 cores, `applegpu_g16s` |
 | Memory | 24 GB unified (25,769,803,776 B) |
 | GPU working-set limit | 17,179,885,568 B (16 GiB). Max buffer 12,884,901,888 B. |
-| Memory bandwidth | 273 GB/s, [Apple's stated figure for M4 Pro](https://www.apple.com/in/newsroom/2024/10/apple-introduces-m4-pro-and-m4-max/). I did not measure it. |
+| Memory bandwidth | 273 GB/s, [Apple's stated figure for M4 Pro](https://www.apple.com/in/newsroom/2024/10/apple-introduces-m4-pro-and-m4-max/). |
 | OS | macOS 15.5 (24F74) |
 | Python | 3.15.2 (Homebrew, no venv) |
 | Packages | mlx 0.32.4, mlx-metal 0.32.4, numpy 2.5.4 |
